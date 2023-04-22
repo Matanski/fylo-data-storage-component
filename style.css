@@ -1,0 +1,176 @@
+body{
+    font-size:14px;
+    display:flex;
+    background-image: url('images/bg-desktop.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y:47.5vh;
+    height:95vh;
+    background-color:hsl(229, 57%, 11%);
+    justify-content:center;
+    align-items:center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo{
+    background-color:hsl(228, 56%, 26%);
+    width:40vh;
+    height:20vh;
+    margin-right:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:5%;
+    border-top-right-radius: 50%;;
+}
+
+#logo_pic{
+    width:10vh;
+    padding-bottom:2vh;
+}
+
+.icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.icons img{
+    margin:5px;
+    border:1px solid hsl(228, 56%, 26%);
+    background-color:hsl(229, 57%, 11%);
+    border-radius:20%;;
+}
+#pic1{
+    padding:10px;
+}
+#pic2{
+    padding: 11.5px 9px 11.5px 9px;
+}
+#pic3{
+    padding:14px 9px 14px 9px;
+}
+
+.data{
+    background-color:hsl(228, 56%, 26%);
+    width:50vh;
+    height:16vh;
+    display:flex;
+    flex-direction:column;
+    margin-top:4vh;
+    
+}
+
+span{
+    font-weight:bold;
+}
+
+.data p{
+    color:white;
+}
+.data > p{
+    color:white;
+    margin-left:20px;
+
+}
+.gb{
+    display:flex;
+    justify-content:space-between;
+    margin-left:20px;
+    margin-right:20px;
+    font-size:small;
+}
+
+.bar_container{
+    width:85%;
+    height:10px;
+    border-radius:50px;
+    border:1px solid black;
+    margin:0 auto;
+    background-color:hsl(229, 57%, 11%);
+
+}
+.bar{
+    border-radius:50px;
+    height:10px;
+    width:70%;
+    background-image:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    display:flex;
+    justify-content:end;
+}
+.circle{
+    height:10px;
+    width:10px;
+    background-color:white;
+    border-radius:50px;
+    margin-right:1px;
+}
+
+.bubble{
+    display:flex;
+    flex-direction:column;
+    align-items:end;
+    position:absolute;
+    margin-left:450px;
+    margin-bottom:100px;
+}
+
+.square{
+    height:60px;
+    width:100px;
+    border-radius:10px;
+    background-color:white;
+    border-bottom-right-radius:0;
+    display:flex;
+    align-items:center;
+}
+.square p{
+    color:black;
+    padding-left:5px;
+    font-size:8px;
+}
+
+.triangle{
+    display:block;
+    width:0;
+    height:0;
+    border-right:10px solid white;
+    border-top:10px solid white;
+    border-left:10px solid transparent;
+    border-bottom:10px solid transparent;
+}
+
+@media only screen and (max-width: 610px) {
+    body{
+        flex-direction:column;
+    }
+    .logo{
+        width:50vh;
+        margin: 0 auto;
+        margin-bottom:20px;
+        align-items:start;
+    }
+    #logo_pic{
+        margin-left:20px;
+        width:100px;
+    }
+    .icons{
+        margin-left:10px;
+    }
+    .data{
+        margin: 0 auto;
+        width:50vh;
+    }
+    .bubble{
+        margin-left:0;
+        margin-top:380px;
+    }
+    .square{
+        width:150px;
+        justify-content:center;
+        text-align:center;
+    }
+    .triangle{
+        display:none;
+    }
+}
